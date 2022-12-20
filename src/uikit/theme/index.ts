@@ -18,11 +18,12 @@ const palette = {
     headerBackGround: '#CFD6FF',
 
     mainBlue: '#334FFA',
+    baseBackground: '#f8f8f8',
 };
 
 const theme = createTheme({
     colors: {
-        mainBackground: palette.white,
+        mainBackground: palette.baseBackground,
         cardPrimaryBackground: palette.purplePrimary,
         mainBlackText: palette.black,
         ...palette
