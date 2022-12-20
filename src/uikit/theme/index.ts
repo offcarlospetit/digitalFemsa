@@ -26,13 +26,18 @@ const theme = createTheme({
         mainBackground: palette.baseBackground,
         cardPrimaryBackground: palette.purplePrimary,
         mainBlackText: palette.black,
+        buttonPrimary: palette.mainBlue,
+        buttonSecondary: palette.mainBlue,
+        mainBlack: palette.black,
+        mainCardBackground: palette.mainBlue,
         ...palette
     },
     spacing: {
         s: 8,
-        m: 16,
+        m: 20,
         l: 24,
         xl: 40,
+        xxl: 54,
     },
     breakpoints: {
         phone: 0,
@@ -79,7 +84,7 @@ const theme = createTheme({
             fontWeight: "800",
             fontSize: 16,
             lineHeight: 21.86,
-            color: 'mainBlackText',
+            color: 'pureWhite',
         },
         myPointsTitle: {
             fontWeight: "800",
@@ -139,6 +144,46 @@ const theme = createTheme({
             color: 'pureWhite',
         },
     },
+    buttonVariants: {
+        buttonPrimary: {
+            backgroundColor: "buttonPrimary",
+            paddingTop: "m",
+            paddingBottom: "m",
+            borderRadius: 10,
+            alignItems: "center",
+        },
+        buttonSecondary: {
+            backgroundColor: "buttonSecondary",
+            paddingTop: "s",
+            paddingBottom: "s",
+            borderRadius: 10,
+            alignItems: "center",
+        },
+    },
+    cardVariants: {
+        defaults: {
+
+        },
+        regular: {
+            // We can refer to other values in the theme here, and use responsive props
+
+        },
+        elevated: {
+            height: 143,
+            backgroundColor: 'mainCardBackground',
+            borderRadius: 20,
+            width: '100%',
+            padding: {
+                phone: 's',
+                tablet: 'm',
+            },
+            shadowColor: 'mainBlack',
+            shadowOpacity: 0.5,
+            shadowOffset: { width: 0, height: 5 },
+            shadowRadius: 4,
+            elevation: 5,
+        }
+    }
 });
 
 export type ThemeType = typeof theme;
