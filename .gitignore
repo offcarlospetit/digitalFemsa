@@ -21,6 +21,9 @@ DerivedData
 *.ipa
 *.xcuserstate
 ios/.xcode.env.local
+ios/build
+ios/Pods
+
 
 # Android/IntelliJ
 #
@@ -60,5 +63,7 @@ buck-out/
 *.jsbundle
 
 # Ruby / CocoaPods
-/ios/Pods/
 /vendor/bundle/
+
+# Ignore test results 
+/coverage
