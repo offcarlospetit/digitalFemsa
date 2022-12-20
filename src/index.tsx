@@ -1,14 +1,13 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import ThemeProviderApp from './themeProvider';
-import {Home} from './home';
+import AppNavigator from './navigation';
 
 type Props = {};
 
 const App: React.FC<Props> = ({}) => {
   return (
     <ThemeProviderApp>
-      <Home />
+      <AppNavigator />
     </ThemeProviderApp>
   );
 };
