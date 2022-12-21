@@ -1,7 +1,6 @@
 import { createTheme } from '@shopify/restyle';
-import { StyleProp } from 'react-native';
 
-const palette = {
+export const palette = {
     purpleLight: '#8C6FF7',
     purplePrimary: '#5A31F4',
     purpleDark: '#3F22AB',
@@ -40,8 +39,13 @@ const theme = createTheme({
         ms: 14,
         m: 20,
         l: 24,
+        ll: 32,
         xl: 40,
+        xll: 47,
         xxl: 54,
+        xxxl: 58,
+        extraHorizontal: 77,
+        extraVertical: 75,
     },
     breakpoints: {
         phone: 0,
@@ -170,10 +174,12 @@ const theme = createTheme({
         },
         buttonSecondary: {
             backgroundColor: "buttonSecondary",
-            paddingTop: "s",
-            paddingBottom: "s",
+            paddingTop: "ms",
+            paddingBottom: "ms",
+            paddingHorizontal: "l",
             borderRadius: 10,
             alignItems: "center",
+            minWidth: 170,
         },
     },
     cardVariants: {
@@ -208,7 +214,30 @@ const theme = createTheme({
             shadowOffset: { width: 0, height: 5 },
             shadowRadius: 4,
             elevation: 5,
-        }
+        },
+        detailHeaderVariant: {
+            height: 150,
+            width: '100%',
+            backgroundColor: 'headerBackGround',
+        },
+        imageCard: {
+            maxHeight: 353,
+            borderRadius: 20,
+            width: '100%',
+            padding: {
+                phone: 's',
+                tablet: 'm',
+            },
+            shadowColor: 'mainBlack',
+            shadowOpacity: 0.5,
+            shadowOffset: { width: 0, height: 5 },
+            shadowRadius: 4,
+            elevation: 5,
+        },
+    },
+    scrollViewVariants: {
+        defaults: {
+        },
     }
 });
 

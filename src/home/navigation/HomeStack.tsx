@@ -3,9 +3,14 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from '../containers/Home';
 import Detail from '../containers/Detail';
 
-type HomeStackParamList = {
+export type HomeStackParamList = {
   Home: undefined;
-  Detail: undefined;
+  Detail: {
+    title: string;
+    createdAt: string;
+    points: number;
+    image?: string;
+  };
 };
 
 const Stack = createNativeStackNavigator<HomeStackParamList>();
