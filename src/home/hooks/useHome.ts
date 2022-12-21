@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useGetProductsQuery } from "./index";
 
 // create a simple hook to get the home data
@@ -6,6 +6,7 @@ const useHome = () => {
     const [showAll, setShowAll] = React.useState(false);
     const [showWins, setShowWins] = React.useState(false);
     const { data, isLoading, isError, isFetching, isSuccess } = useGetProductsQuery({});
+    const [productsData, setProductsData] = React.useState(data);
 
     const handleShowAll = () => {
         setShowAll(!showAll);
@@ -49,8 +50,26 @@ const useHome = () => {
         });
     };
 
+    useEffect(() => {
+        if (!productsData) {
+            setProductsData(data);
+        }
+    }, [data, isFetching, isSuccess]);
+
+    useEffect(() => {
+        if (showAll && showWins) {
+            setProductsData(data?.filter((product) => product.is_redemption));
+        } else if (showAll && !showWins) {
+            setProductsData(data?.filter((product) => !product.is_redemption));
+        } else {
+            setProductsData(data);
+        }
+    }, [showAll, showWins]);
+
+
+
     return {
-        data,
+        data: productsData,
         isLoading,
         isError,
         isFetching,
