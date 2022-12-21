@@ -8,7 +8,6 @@ type Props = {};
 
 const Home: React.FC<Props> = ({}) => {
   const {top} = useSafeAreaInsets();
-  console.log({top});
   return (
     <Box flex={1} backgroundColor="baseBackground">
       <Box paddingLeft="m" paddingTop="s" style={{marginTop: top + 13}}>
