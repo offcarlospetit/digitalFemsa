@@ -19,6 +19,8 @@ const palette = {
 
     mainBlue: '#334FFA',
     baseBackground: '#f8f8f8',
+    mainGreen: '#00B833',
+    mainRed: '#FF0000',
 };
 
 const theme = createTheme({
@@ -33,7 +35,9 @@ const theme = createTheme({
         ...palette
     },
     spacing: {
-        s: 8,
+        sx: 7,
+        s: 10,
+        ms: 14,
         m: 20,
         l: 24,
         xl: 40,
@@ -143,6 +147,18 @@ const theme = createTheme({
             lineHeight: 16.39,
             color: 'pureWhite',
         },
+        iconPlus: {
+            color: "mainGreen",
+            fontWeight: "800",
+            fontSize: 16,
+            lineHeight: 21.86,
+        },
+        iconMinus: {
+            color: "mainRed",
+            fontWeight: "800",
+            fontSize: 16,
+            lineHeight: 21.86,
+        },
     },
     buttonVariants: {
         buttonPrimary: {
@@ -167,6 +183,16 @@ const theme = createTheme({
         regular: {
             // We can refer to other values in the theme here, and use responsive props
 
+        },
+        bigPlainCard: {
+            height: 350,
+            backgroundColor: 'pureWhite',
+            borderRadius: 20,
+            width: '100%',
+            padding: {
+                phone: 's',
+                tablet: 'm',
+            },
         },
         elevated: {
             height: 143,
