@@ -1,11 +1,10 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Box, Button, Card, Text} from '../../uikit';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import Item from '../components/Item';
 import {ScrollView} from 'react-native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {HomeStackParamList} from '../navigation/HomeStack';
-import {useGetProductsQuery} from '../hooks';
 import useHome from '../hooks/useHome';
 
 export type HomeScreenNavigationProp = NativeStackScreenProps<
@@ -22,7 +21,6 @@ const Home: React.FC<HomeScreenNavigationProp> = ({navigation}) => {
     handleShowRedeemed,
     handleShowWins,
     showAll,
-    showWins,
     showDate,
     formatPoints,
     getMonthFromData,
@@ -70,17 +68,27 @@ const Home: React.FC<HomeScreenNavigationProp> = ({navigation}) => {
         alignItems="center">
         <Card paddingBottom="l" paddingTop="m" variant="bigPlainCard">
           <ScrollView showsVerticalScrollIndicator={false}>
-            {data?.map((item, index) => (
-              <Item
-                title={item.product}
-                date={showDate(item.createdAt)}
-                points={formatPoints(item.points)}
-                isRedemption={item.is_redemption}
-                image={item.image}
-                key={index}
-                onPress={() => handleNavigateToDetail(index)}
-              />
-            ))}
+            {data ? (
+              data.map((item, index) => (
+                <Box testID="item">
+                  <Item
+                    title={item.product}
+                    date={showDate(item.createdAt)}
+                    points={formatPoints(item.points)}
+                    isRedemption={item.is_redemption}
+                    image={item.image}
+                    key={index}
+                    onPress={() => handleNavigateToDetail(index)}
+                  />
+                </Box>
+              ))
+            ) : (
+              <Box paddingLeft="m" marginTop="m">
+                <Text testID="loading" variant="detailTitle">
+                  Cargando...
+                </Text>
+              </Box>
+            )}
           </ScrollView>
         </Card>
       </Box>

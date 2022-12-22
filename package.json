@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "npx react-native run-ios --simulator='iPhone 14 Pro Max'",
     "start": "react-native start",
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
