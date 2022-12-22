@@ -35,17 +35,23 @@ const Item: React.FC<Props> = ({
           />
         </Box>
         <Box flex={1} marginLeft="s">
-          <Text variant="itemTitle">{title}</Text>
-          <Text marginTop="sx" variant="itemDate">{date}</Text>
+          <Text testID="title" variant="itemTitle">
+            {title}
+          </Text>
+          <Text testID="date" marginTop="sx" variant="itemDate">
+            {date}
+          </Text>
         </Box>
         <Box alignItems="center" flexDirection="row">
-          <Text variant={isRedemption ? 'iconPlus' : 'iconMinus'}>
+          <Text testID="icon" variant={isRedemption ? 'iconPlus' : 'iconMinus'}>
             <Icon name={isRedemption ? 'plus' : 'minus'} size={16} />
           </Text>
-          <Text variant="pointAmount">{points}</Text>
+          <Text testID="points" variant="pointAmount">
+            {points}
+          </Text>
         </Box>
         <Box marginLeft="s">
-          <Text variant="pointAmount">
+          <Text testID="iconRight" variant="pointAmount">
             <Icon name="right" size={20} />
           </Text>
         </Box>

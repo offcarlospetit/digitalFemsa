@@ -1,0 +1,649 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component Should renders Home Component correctly  1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#f8f8f8",
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "paddingLeft": 20,
+          "paddingTop": 10,
+        },
+        {
+          "marginTop": 13,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {},
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#0B0B0B",
+              "fontSize": 20,
+              "fontWeight": "800",
+              "lineHeight": 27.32,
+            },
+          ]
+        }
+      >
+        Bienvenido de vuelta!
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "color": "#0B0B0B",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 21.86,
+            },
+          ]
+        }
+      >
+        Ruben Rodriguez
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "marginBottom": 20,
+          "marginTop": 20,
+          "paddingLeft": 20,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#9B9898",
+            "fontSize": 14,
+            "fontWeight": "800",
+            "lineHeight": 19.12,
+          },
+        ]
+      }
+    >
+      TUS PUNTOS
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingHorizontal": 40,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "paddingBottom": 24,
+            "paddingTop": 20,
+          },
+          [
+            {
+              "backgroundColor": "#334FFA",
+              "borderRadius": 20,
+              "elevation": 5,
+              "height": 143,
+              "padding": 10,
+              "shadowColor": "#0B0B0B",
+              "shadowOffset": {
+                "height": 5,
+                "width": 0,
+              },
+              "shadowOpacity": 0.5,
+              "shadowRadius": 4,
+              "width": "100%",
+            },
+          ],
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+              "fontSize": 16,
+              "fontWeight": "800",
+              "lineHeight": 21.86,
+              "marginLeft": 20,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+              "fontSize": 32,
+              "fontWeight": "800",
+              "lineHeight": 43.71,
+              "marginTop": 10,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        0.00 pts
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "marginBottom": 20,
+          "marginTop": 20,
+          "paddingLeft": 20,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#9B9898",
+            "fontSize": 14,
+            "fontWeight": "800",
+            "lineHeight": 19.12,
+          },
+        ]
+      }
+    >
+      TUS MOVIMIENTOS
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginBottom": 20,
+          "paddingHorizontal": 20,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "paddingBottom": 24,
+            "paddingTop": 20,
+          },
+          [
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 20,
+              "height": 350,
+              "padding": 10,
+              "width": "100%",
+            },
+          ],
+        ]
+      }
+    >
+      <RCTScrollView
+        showsVerticalScrollIndicator={false}
+      >
+        <View />
+      </RCTScrollView>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "paddingBottom": 24,
+          "paddingHorizontal": 24,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#334FFA",
+            "borderRadius": 10,
+            "minWidth": 170,
+            "opacity": 1,
+            "paddingBottom": 14,
+            "paddingHorizontal": 24,
+            "paddingTop": 14,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#FFFFFF",
+                "fontSize": 16,
+                "fontWeight": "800",
+                "lineHeight": 21.86,
+              },
+            ]
+          }
+        >
+          Ganados
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#334FFA",
+            "borderRadius": 10,
+            "minWidth": 170,
+            "opacity": 1,
+            "paddingBottom": 14,
+            "paddingHorizontal": 24,
+            "paddingTop": 14,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#FFFFFF",
+                "fontSize": 16,
+                "fontWeight": "800",
+                "lineHeight": 21.86,
+              },
+            ]
+          }
+        >
+          Canjeados
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Item Component Should renders  1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#f8f8f8",
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "paddingLeft": 20,
+          "paddingTop": 10,
+        },
+        {
+          "marginTop": 13,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {},
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#0B0B0B",
+              "fontSize": 20,
+              "fontWeight": "800",
+              "lineHeight": 27.32,
+            },
+          ]
+        }
+      >
+        Bienvenido de vuelta!
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "color": "#0B0B0B",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 21.86,
+            },
+          ]
+        }
+      >
+        Ruben Rodriguez
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "marginBottom": 20,
+          "marginTop": 20,
+          "paddingLeft": 20,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#9B9898",
+            "fontSize": 14,
+            "fontWeight": "800",
+            "lineHeight": 19.12,
+          },
+        ]
+      }
+    >
+      TUS PUNTOS
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingHorizontal": 40,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "paddingBottom": 24,
+            "paddingTop": 20,
+          },
+          [
+            {
+              "backgroundColor": "#334FFA",
+              "borderRadius": 20,
+              "elevation": 5,
+              "height": 143,
+              "padding": 10,
+              "shadowColor": "#0B0B0B",
+              "shadowOffset": {
+                "height": 5,
+                "width": 0,
+              },
+              "shadowOpacity": 0.5,
+              "shadowRadius": 4,
+              "width": "100%",
+            },
+          ],
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+              "fontSize": 16,
+              "fontWeight": "800",
+              "lineHeight": 21.86,
+              "marginLeft": 20,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+              "fontSize": 32,
+              "fontWeight": "800",
+              "lineHeight": 43.71,
+              "marginTop": 10,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        0.00 pts
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "marginBottom": 20,
+          "marginTop": 20,
+          "paddingLeft": 20,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#9B9898",
+            "fontSize": 14,
+            "fontWeight": "800",
+            "lineHeight": 19.12,
+          },
+        ]
+      }
+    >
+      TUS MOVIMIENTOS
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginBottom": 20,
+          "paddingHorizontal": 20,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "paddingBottom": 24,
+            "paddingTop": 20,
+          },
+          [
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 20,
+              "height": 350,
+              "padding": 10,
+              "width": "100%",
+            },
+          ],
+        ]
+      }
+    >
+      <RCTScrollView
+        showsVerticalScrollIndicator={false}
+      >
+        <View />
+      </RCTScrollView>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "paddingBottom": 24,
+          "paddingHorizontal": 24,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#334FFA",
+            "borderRadius": 10,
+            "minWidth": 170,
+            "opacity": 1,
+            "paddingBottom": 14,
+            "paddingHorizontal": 24,
+            "paddingTop": 14,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#FFFFFF",
+                "fontSize": 16,
+                "fontWeight": "800",
+                "lineHeight": 21.86,
+              },
+            ]
+          }
+        >
+          Ganados
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#334FFA",
+            "borderRadius": 10,
+            "minWidth": 170,
+            "opacity": 1,
+            "paddingBottom": 14,
+            "paddingHorizontal": 24,
+            "paddingTop": 14,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#FFFFFF",
+                "fontSize": 16,
+                "fontWeight": "800",
+                "lineHeight": 21.86,
+              },
+            ]
+          }
+        >
+          Canjeados
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

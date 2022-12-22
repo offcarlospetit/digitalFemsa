@@ -1,0 +1,245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detail Component Should renders Detail Component correctly  1`] = `
+<RCTScrollView
+  showsVerticalScrollIndicator={false}
+>
+  <View>
+    <View
+      style={
+        [
+          {
+            "justifyContent": "flex-end",
+            "paddingBottom": 20,
+            "paddingHorizontal": 20,
+          },
+          [
+            {
+              "backgroundColor": "#CFD6FF",
+              "height": 150,
+              "width": "100%",
+            },
+          ],
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#0B0B0B",
+              "fontSize": 24,
+              "fontWeight": "800",
+              "lineHeight": 24,
+            },
+          ]
+        }
+      >
+        title
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "marginTop": 20,
+            "paddingHorizontal": 20,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#f8f8f8",
+              "paddingHorizontal": 77,
+              "paddingVertical": 75,
+            },
+            [
+              {
+                "borderRadius": 20,
+                "elevation": 5,
+                "maxHeight": 353,
+                "padding": 10,
+                "shadowColor": "#0B0B0B",
+                "shadowOffset": {
+                  "height": 5,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.5,
+                "shadowRadius": 4,
+                "width": "100%",
+              },
+            ],
+          ]
+        }
+      >
+        <Image
+          source={
+            {
+              "uri": "image",
+            }
+          }
+          style={
+            {
+              "height": 200,
+              "resizeMode": "cover",
+              "width": 200,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "marginTop": 32,
+            "paddingHorizontal": 20,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#9B9898",
+              "fontSize": 14,
+              "fontWeight": "800",
+              "lineHeight": 19.12,
+            },
+          ]
+        }
+      >
+        Detalles del producto:
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "marginTop": 20,
+            "paddingHorizontal": 20,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#0B0B0B",
+              "fontSize": 16,
+              "fontWeight": "800",
+              "lineHeight": 21.86,
+            },
+          ]
+        }
+      >
+        Comprado el Invalid Date
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "marginTop": 20,
+            "paddingHorizontal": 20,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#9B9898",
+              "fontSize": 14,
+              "fontWeight": "800",
+              "lineHeight": 19.12,
+            },
+          ]
+        }
+      >
+        Con esta compra acumulaste:
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "marginTop": 32,
+            "paddingHorizontal": 20,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#0B0B0B",
+              "fontSize": 24,
+              "fontWeight": "800",
+              "lineHeight": 32.78,
+            },
+          ]
+        }
+      >
+        NaN puntos
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "marginBottom": 40,
+            "marginTop": 47,
+            "paddingHorizontal": 20,
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#334FFA",
+            "borderRadius": 10,
+            "opacity": 1,
+            "paddingBottom": 20,
+            "paddingTop": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#FFFFFF",
+                "fontSize": 16,
+                "fontWeight": "800",
+                "lineHeight": 21.86,
+              },
+            ]
+          }
+        >
+          Aceptar
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
