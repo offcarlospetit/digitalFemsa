@@ -10,6 +10,7 @@ import {
     PURGE,
     REGISTER,
 } from 'redux-persist';
+import type { PreloadedState } from '@reduxjs/toolkit';
 
 import { setupListeners } from "@reduxjs/toolkit/dist/query";
 import logger from 'redux-logger';
@@ -48,6 +49,20 @@ export const store = configureStore({
             },
         }).concat(productApi.middleware, logger)
 });
+
+export const setupStore = (preloadedState?: PreloadedState<RootState>) => {
+    return configureStore({
+        reducer: reducers,
+        middleware: (getDefaultMiddleware) =>
+            getDefaultMiddleware({
+                immutableCheck: false,
+                serializableCheck: {
+                    ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+                },
+            }).concat(productApi.middleware),
+        preloadedState
+    });
+};
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
