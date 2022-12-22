@@ -25,11 +25,12 @@ Requerimientos minimos y Desados:
 - [x] Conexión al endpoint
 - [x] Navegación entre pantallas
 - [x] Pruebas unitarias (Alance a crubir un 71% de codigo en pruebas unitarias) 
+   >Las pruebas correspondientes a la pantallad de home no esta completa debido a que la libreria que queria utilizar para probar los hooks, '@testing-library/react-hooks', no esta disponible aun para react 18 
 
 Los siguientes elementos son deseables: 
 - [x] Filtro
-- [-] Mantener todos los elementos “pixel perfect”
-- [-] Pruebas unitarias de componente o de integración
+- [ ] Mantener todos los elementos “pixel perfect”
+- [ ] Pruebas unitarias de componente o de integración
 
 
 ## Para probar el desafio
@@ -55,12 +56,16 @@ Los siguientes elementos son deseables:
         npm run android
     ```
 
-## Preview: 
+
 
 ![](./assets/screen2.png)
 ![](./assets/screen3.png)
 ![](./assets/screen4.png)
 ![](./assets/screen5.png)
 
+
 ![](./assets/preview.gif)
 
+## Test: 
+
+![](./assets/testScreen.png)
