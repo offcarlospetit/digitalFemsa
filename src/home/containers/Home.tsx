@@ -70,14 +70,13 @@ const Home: React.FC<HomeScreenNavigationProp> = ({navigation}) => {
           <ScrollView showsVerticalScrollIndicator={false}>
             {data ? (
               data.map((item, index) => (
-                <Box testID="item">
+                <Box key={item.product} testID="item">
                   <Item
                     title={item.product}
                     date={showDate(item.createdAt)}
                     points={formatPoints(item.points)}
                     isRedemption={item.is_redemption}
                     image={item.image}
-                    key={index}
                     onPress={() => handleNavigateToDetail(index)}
                   />
                 </Box>
